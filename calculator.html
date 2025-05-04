@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Calorie Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calorie Burn Calculator</h1>
+  <form onsubmit="calculateCalories(event)">
+    <label>Weight (kg): <input type="number" id="weight" required></label><br>
+    <label>Duration (minutes): <input type="number" id="duration" required></label><br>
+    <label>Intensity:
+      <select id="intensity">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+    </label><br>
+    <button type="submit">Calculate</button>
+  </form>
+  <p id="result"></p>
+  <script src="script.js"></script>
+</body>
+</html>
